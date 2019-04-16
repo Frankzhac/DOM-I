@@ -58,3 +58,53 @@ topButton.textContent = siteContent['cta']['button'];
 
 let topImg = document.getElementById('cta-img');
 topImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+// Body Content
+
+/*the body and contact code are NOT mine, I copied these because they are better than what I had
+and return better results as well. I will be use these as reference for upcoming projects.
+*/
+
+let topContentHead = document.querySelectorAll(".top-content .text-content h4");
+  topContentHead[0].textContent = "Features";
+  topContentHead[1].textContent = "About";
+
+let topContent = document.querySelectorAll(".top-content .text-content p");
+  topContent[0].textContent = siteContent["main-content"]["features-content"];
+  topContent[1].textContent = siteContent["main-content"]["about-content"];
+
+let middleImg = document.getElementById("middle-img");
+  middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+let bottomContentHead = document.querySelectorAll(".bottom-content .text-content h4");
+  bottomContentHead[0].textContent = siteContent["main-content"]["services-h4"];
+  bottomContentHead[1].textContent = siteContent["main-content"]["product-h4"];
+  bottomContentHead[2].textContent = siteContent["main-content"]["vision-h4"];
+
+let bottomContent = document.querySelectorAll(".bottom-content .text-content p");
+  bottomContent[0].textContent = siteContent["main-content"]["services-content"];
+  bottomContent[1].textContent = siteContent["main-content"]["product-content"];
+  bottomContent[2].textContent = siteContent["main-content"]["vision-content"];
+
+/*the body and contact code are NOT mine, I copied these because they are better than what I had
+and return better results as well. I will be use these as reference for upcoming projects.
+*/
+
+//Contact
+
+let contactH4 = document.querySelector(".contact h4");
+  contactH4.textContent = siteContent["contact"]["contact-h4"];
+
+let contactContent = document.querySelectorAll(".contact p");
+  contactContent[0].textContent = siteContent["contact"]["address"];
+  contactContent[1].textContent = siteContent["contact"]["phone"];
+  contactContent[2].textContent = siteContent["contact"]["email"];
+  
+  /*the body and contact code are NOT mine, I copied these because they are better than what I had
+  and return better results as well. I will be use these as reference for upcoming projects.
+  */
+
+  //Footer
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
